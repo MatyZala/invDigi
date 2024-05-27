@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'Poetsen One';
+  src: url('ruta/a/PoetsenOne-Regular.woff2') format('woff2'),
+    url('ruta/a/PoetsenOne-Regular.woff') format('woff');
+  /* Agrega más formatos de fuentes si es necesario */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Poetsen One', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+
+.mariposa {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  z-index: 1;
+}
+
+.mariposa2 {
+  position: absolute;
+  top: 160px;
+  /* Ajusta la posición vertical según sea necesario */
+  right: 10px;
+  /* Ajusta la posición horizontal según sea necesario */
+  width: 50px;
+  z-index: 1;
+}
+
+.title {
+  font-size: 5rem;
+  margin-bottom: 10px;
+  color: #8d966e;
+}
+
+.date-container {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  background: #8d966e;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background-color: white;
+}
+
+.date {
+  margin: 0 10px;
+  color: #ab9d60;
+  /* Espacio entre la fecha y las líneas */
+}
+
+.text {
+  margin-top: 20px;
+  color: #4a8f2a;
+  font-weight: 700;
+}
+
+
+
+.ondas {
+  position: absolute;
+  bottom: 0;
+  /* Coloca las ondas en la parte inferior */
+  left: 0;
+  width: 100%;
+  /* Ajusta el ancho según sea necesario */
+  z-index: 2;
+  /* Asegura que las ondas estén encima del encabezado */
+}
+
+.image-gallery {
+  width: 100%;
+}
+
+.image-gallery-image {
+  max-width: 100%;
+  max-height: 200px;
+  /* Establece una altura máxima fija para todas las imágenes */
+  width: auto;
+  height: auto;
+}
+
+
+
+.comilla {
+  width: 20px;
+  vertical-align: middle;
+  padding: 6px;
+}
+
+.header-content {
+  z-index: 2;
+  /* Asegura que el contenido esté encima de la mariposa */
+}
+
+
+.header h1 {
+  margin-bottom: 10px;
+}
+
+.header p {
+  margin-bottom: 20px;
+}
+
+.details,
+.gallery {
+  margin: 20px;
+}
+
+.countdown {
+  text-align: center;
+  margin: 30px;
+}
+
+#countdown-timer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.countdown-item {
+  flex-direction: column;
+  align-items: center;
+}
+
+.vertical-line {
+  width: 1px;
+  height: auto;
+  background-color: #bfa880;
+  z-index: 2;
+  /* Color de la línea */
+  margin: 0 10px;
+  /* Espacio entre la línea y los elementos */
+}
+
+
+h2 {
+  color: #333;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details p {
+  font-size: large;
+  margin: 10px 0;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: 322px;
+}
