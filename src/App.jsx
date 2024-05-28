@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Mariposa from './assets/mariposa_3.svg'
+import Mariposa from './assets/mariposa.gif'
+import Flor from './assets/flor.gif'
 import ComillaApertura from './assets/comilla-apertura.svg'
 import ComillaCierre from './assets/comilla-cierre.svg'
 import Fire from './assets/fireLine.gif'
@@ -8,7 +9,6 @@ import Ubi from './assets/ubi.png'
 import Divisor from './assets/divisor.svg'
 import Circulo from './assets/img_circuloContador01.svg'
 import Regalos from './assets/glitter.jpg'
-import Regalo from './assets/regalo.png'
 import ImageGallery from "react-image-gallery";
 import ChecklistRtlOutlinedIcon from '@mui/icons-material/ChecklistRtlOutlined';
 import CheckroomOutlinedIcon from '@mui/icons-material/CheckroomOutlined';
@@ -110,19 +110,17 @@ function App() {
 
   return (
     <div className='container'>
-      <div className="header" style={{ backgroundImage: `url('https://images.pexels.com/photos/8014879/pexels-photo-8014879.jpeg')` }}>
+      <div className="header" style={{ background: '#b2fba7' }}>
         <img src={Mariposa} className="mariposa" alt="Mariposa" />
         <img src={Mariposa} className="mariposa2" alt="Mariposa" />
-        <div className="header-content">
-          <div className="date-container">
-            <div className="line"></div>
-            <h2 className="date">03.11.2024</h2>
-            <div className="line"></div>
-          </div>
-          <h1 className='title'>Florencia Mis 15 años</h1>
+        <img src={Flor} className='flor' style={{ color: '#c2bca1', fontSize: '80px' }} />
+        <img src={Flor} className='flor2' style={{ color: '#c2bca1', fontSize: '80px' }} />
+        <div >
+          <h1 className='title' style={{ fontFamily: 'Lobster Two, cursive', marginTop: 0, paddingTop: 0 }}>Sofía Mis 15 años</h1>
+
           <p className='text'>
             <img src={ComillaApertura} className="comilla" alt="Comilla de apertura" />
-            Te espero para compartir la alegría de esa noche que será para mí mágica, inolvidable y única.
+            Te espero para compartir la alegría de ese día que será para mí mágico, inolvidable y único.
             <img src={ComillaCierre} className="comilla" alt="Comilla de cierre" />
           </p>
         </div>
